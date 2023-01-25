@@ -1,0 +1,40 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "0fca98d380618a4ede67611489f946f9",
+    "entities": [
+      {
+        "tableName": "RECORD",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`NAME` TEXT NOT NULL, `DESCRIPTION` TEXT NOT NULL, PRIMARY KEY(`NAME`))",
+        "fields": [
+          {
+            "fieldPath": "NAME",
+            "columnName": "NAME",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "DESCRIPTION",
+            "columnName": "DESCRIPTION",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "NAME"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0fca98d380618a4ede67611489f946f9')"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Assignment1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name1" tools:ignore="DuplicateDefinition">Assignment1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_home_fragment">Hello home fragment</string>
+    <string name="app_name2" tools:ignore="DuplicateDefinition">Assignment1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_chat_fragment">Hello chat fragment</string>
+    <string name="app_name3" tools:ignore="DuplicateDefinition">Assignment1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_search_fragment">Hello search fragment</string>
+    <string name="app_name4" tools:ignore="DuplicateDefinition">Assignment1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_settings_fragment">Hello setting fragment</string>
+</resources>

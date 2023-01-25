@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/dashboard"
+        android:name="com.example.assignment1.ui.dashboard.DashboardFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/dashboard_fragment" />
+    <fragment
+        android:id="@+id/favourite"
+        android:name="com.example.assignment1.ui.favourite.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/favourite_fragment" />
+    <fragment
+        android:id="@+id/add_record"
+        android:name="com.example.assignment1.ui.addrecord.AddRecordFragment"
+        android:label="fragment_addrecord"
+        tools:layout="@layout/add_record_fragment" />
+    <fragment
+        android:id="@+id/search"
+        android:name="com.example.assignment1.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/settings2"
+        android:name="com.example.assignment1.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/settings_fragment" />
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.assignment1.MainFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/main_fragment" />
+</navigation>
