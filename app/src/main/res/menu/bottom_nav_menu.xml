@@ -13,9 +13,9 @@
         android:icon="@drawable/ic_baseline_add_circle_24"
         android:title="AddRecord" />
     <item
-        android:id="@+id/search"
+        android:id="@+id/movie"
         android:icon="@drawable/ic_baseline_search_24"
-        android:title="Search" />
+        android:title="Movie" />
     <item
         android:id="@+id/settings2"
         android:icon="@drawable/ic_baseline_settings_24"

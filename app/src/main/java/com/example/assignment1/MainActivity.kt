@@ -8,7 +8,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import com.example.assignment1.ui.addrecord.AddRecordFragment
 import com.example.assignment1.ui.dashboard.DashboardFragment
 import com.example.assignment1.ui.favourite.FavouriteFragment
-import com.example.assignment1.ui.search.SearchFragment
+import com.example.assignment1.ui.movie.MovieFragment
 import com.example.assignment1.ui.settings.SettingsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
 
-                R.id.search -> {
-                    loadFragment(SearchFragment())
+                R.id.movie -> {
+                    loadFragment(MovieFragment())
                     true
                 }
                 R.id.settings2 -> {

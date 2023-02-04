@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.assignment1">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
-            android:name=".DashboardActivity"
+            android:name=".MovieActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".ui.dashboard.DashboardActivity"
             android:exported="true" />
         <activity
             android:name=".SettingsActivity"
@@ -22,10 +22,7 @@
             android:name=".SearchActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
-            android:exported="true" />
-        <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.addrecord.AddNoteActivity"
             android:exported="true" />
         <activity
             android:name=".FavouriteActivity"

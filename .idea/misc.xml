@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/favourite_activity.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/favourite_fragment.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/main_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/movie_activity.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/movie_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/settings_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/single_note.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/layout/single_record.xml" value="0.1" />
+        <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/Assignment1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16458333333333333" />
         <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/app/src/main/res/drawable/note_bg_layout.xml" value="0.4928571428571429" />
         <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/app/src/main/res/drawable/note_button_bg_layout.xml" value="0.1" />
         <entry key="..\:/Users/syeda/AndroidStudioProjects/Assignment1/app/src/main/res/drawable/note_text_bg_layout.xml" value="0.1" />
