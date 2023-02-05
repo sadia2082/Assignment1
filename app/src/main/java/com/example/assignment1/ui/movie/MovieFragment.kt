@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.assignment1.databinding.MovieActivityBinding
@@ -37,14 +38,15 @@ class MovieFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val viewModel =
-            ViewModelProvider(this).get(MovieViewModel::class.java)
-
-        binding.recyclerview.adapter = adapter
-
         binding = MovieActivityBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val repository = MainRepository(retrofitService)
+        viewModel = ViewModelProvider(this, MyViewModelFactory(repository)).get(MovieViewModel::class.java)
+
+        binding.recyclerview.adapter = adapter
         binding.recyclerview.layoutManager = LinearLayoutManager(context)
+
         viewModel.movieList.observe(viewLifecycleOwner, Observer {
             Log.d(TAG, "onCreate: $it")
             adapter.setMovieList(it)
@@ -55,16 +57,20 @@ class MovieFragment : Fragment() {
         })
         viewModel.getAllMovies()
 
-
         return root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-
-    }
 
 }
 
+class MyViewModelFactory constructor(private val repository: MainRepository): ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return if (modelClass.isAssignableFrom(MovieViewModel::class.java)) {
+            MovieViewModel(this.repository) as T
+        } else {
+            throw IllegalArgumentException("ViewModel Not Found")
+        }
+    }
+}
 
 
