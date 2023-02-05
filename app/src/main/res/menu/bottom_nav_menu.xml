@@ -14,7 +14,7 @@
         android:title="AddRecord" />
     <item
         android:id="@+id/movie"
-        android:icon="@drawable/ic_baseline_search_24"
+        android:icon="@drawable/ic_baseline_text_snippet_24"
         android:title="Movie" />
     <item
         android:id="@+id/settings2"

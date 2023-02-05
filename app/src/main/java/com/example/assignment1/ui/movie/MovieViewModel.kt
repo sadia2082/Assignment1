@@ -11,7 +11,7 @@ class MovieViewModel constructor(private val repository: MainRepository)  : View
     val movieList = MutableLiveData<List<Movie>>()
     val errorMessage = MutableLiveData<String>()
 
-    fun getAllMovies() {
+    fun getAllMovies(): MutableLiveData<List<Movie>> {
 
         val response = repository.getAllMovies()
         response.enqueue(object : Callback<List<Movie>> {
@@ -23,5 +23,6 @@ class MovieViewModel constructor(private val repository: MainRepository)  : View
                 errorMessage.postValue(t.message)
             }
         })
+        return movieList
     }
 }
